@@ -1,0 +1,1 @@
+Only the first subtask was completed. Implemented basic UI (window), parsing and output.

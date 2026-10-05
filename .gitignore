@@ -1,0 +1,13 @@
+build/
+bin/
+obj/
+.vs/
+.vscode/
+commands.exe
+*.exe
+*.o
+*.obj
+*.dll
+*.a
+.DS_Store
+Thumbs.db

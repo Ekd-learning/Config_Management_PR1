@@ -1,0 +1,10 @@
+// download MSYS2 UCRT and use this command there to download basic libraries 
+// pacman -S mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja mingw-w64-x86_64-sfml
+
+pacman -S --noconfirm mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-ucrt-x86_64-sfml
+
+
+// потом в папке проекта пишем следующие комманды
+cmake --build build
+cmake -B build -G ninja
+./build/ShellEmulator.exe
