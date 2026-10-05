@@ -8,12 +8,12 @@ set(SFML_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(SFML_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 
 find_package(SFML 3 QUIET COMPONENTSGraphics Window System)
-if(NOT SMFL_FOUND)
-    message(STATUS "SMFL 3 not found. Fetching...")
+if(NOT SFML_FOUND)
+    message(STATUS "SFML 3 not found. Fetching...")
     include(FetchContent)
     FetchContent_Declare(
         SFML
-        GIT_REPOSITORY https://github.com/SMFL/SFML.git
+        GIT_REPOSITORY https://github.com/SFML/SFML.git
         GIT_TAG 3.0.0
     )
     FetchContent_MakeAvailable(SFML)
