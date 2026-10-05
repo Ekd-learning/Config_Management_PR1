@@ -1,13 +1,13 @@
 {
-    "name": "C++ SFML Development",
-    "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-22.04",
-    "onCreateCommand": "sudo apt-get update && sudo apt-get install -y libx11-dev libxrandr-dev libxcurecor-dev libxi-dev libudev-dev libgl1-mesa-dev libfreetype6-dev libflac-dev libvorbic-dev libpoenal-dev",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-vscode.cpptools",
-                "ms-vscode.cmake-tools"
-            ]
-        }
+  "name": "C++ SFML Development",
+  "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-22.04",
+  "onCreateCommand": "sudo apt-get update && sudo apt-get install -y libx11-dev libxrandr-dev libxcursor-dev libxi-dev libudev-dev libgl1-mesa-dev libfreetype6-dev libflac-dev libvorbis-dev libopenal-dev",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+      ]
     }
+  }
 }
