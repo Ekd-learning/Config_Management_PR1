@@ -3,7 +3,7 @@ bin/
 obj/
 .vs/
 .vscode/
-commands.exe
+commands.txt
 *.exe
 *.o
 *.obj
