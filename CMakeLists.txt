@@ -4,6 +4,9 @@ project(ShellEmulator CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED_ON)
 
+set(SFML_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(SFML_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+
 find_package(SFML 3 QUIET COMPONENTSGraphics Window System)
 if(NOT SMFL_FOUND)
     message(STATUS "SMFL 3 not found. Fetching...")
@@ -13,7 +16,7 @@ if(NOT SMFL_FOUND)
         GIT_REPOSITORY https://github.com/SMFL/SFML.git
         GIT_TAG 3.0.0
     )
-    fETCHcONTENT_mAKEaVAILABLE(sfml)
+    FetchContent_MakeAvailable(SFML)
 endif()
 
 add_executable(ShellEmulator

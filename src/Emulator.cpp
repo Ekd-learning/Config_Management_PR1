@@ -6,7 +6,10 @@
 #include <sstream>
 
 #if defined(_WIN32)
-#include <windows.h>
+const string fontPath = "C:\\Windows\\Fonts\\arial.ttf";
+// #include <windows.h>
+#else
+    const string fontPath = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf";
 #endif
 
 using namespace std;
@@ -15,8 +18,9 @@ Emulator::Emulator()
     : window(sf::VideoMode({WINDOW_WIDTH, WINDOW_HEIGHT}), "Shell Emulator"),
       displayText(font) 
 {
-    if (!font.openFromFile("C:\\Windows\\Fonts\\arial.ttf"))
-        cerr << "Could not load font Arial" << endl;
+    // if (!font.openFromFile("C:\\Windows\\Fonts\\arial.ttf"))
+    if (!font.openFromFile(fontPath))
+        cerr << "Could not load font: " << fontPath << endl;
     
 
     displayText.setCharacterSize(18);
